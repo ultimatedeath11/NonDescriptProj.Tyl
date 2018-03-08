@@ -15,7 +15,7 @@ public class Card
 
   public boolean isFaceCard() //method for checking if card is face card (excludes ace)
   {
-    if (value > 10 || value < 14)
+    if (value > 10 && value < 14)
       return true;
     return false;
   }
@@ -32,7 +32,7 @@ public class Card
 
   public int getValue() {return value;}
 
-  public String getName() {return name;}
+  public String getName() {return name;} 
 
   public String getSuit() {return suit;}
     
